@@ -114,5 +114,5 @@ if hasil == INF
   puts "Tidak ada rute yang menyelesaikan TSP"
 else
   puts "Biaya minimum untuk menyelesaikan TSP adalah: #{hasil}"
-  puts "Rute yang dilalui: #{path.map { |kota| kota + 1 }.join(' -> ')}"
+  puts "Rute yang dilalui: #{path.map { |kota| kota}.join(' -> ')}"
 end

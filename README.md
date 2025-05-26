@@ -5,12 +5,12 @@ Program ini menyelesaikan **Travelling Salesman Problem (TSP)** menggunakan **Dy
 ## Struktur Folder
 
 ```
-├── README.md
 ├── src/
 │   └── tsp.rb
-└── test/
-    ├── input
-    └── output
+├── test/
+│   ├── input
+│   └── output
+└── README.md
 ```
 
 ## Format Input
