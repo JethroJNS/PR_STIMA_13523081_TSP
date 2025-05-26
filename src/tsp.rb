@@ -102,9 +102,10 @@ def read_graph_from_file(filename)
 end
 
 # ================= MAIN =================
-puts "Masukkan nama file input (contoh: input1.txt):"
+puts "Masukkan nama file input:"
 input_filename = gets.strip
-input_path = File.join("..", "test", "input", input_filename)
+base_dir = File.expand_path(File.dirname(__FILE__))
+input_path = File.join(base_dir, "..", "test", "input", input_filename)
 
 graph = read_graph_from_file(input_path)
 hasil, path = tsp(graph)
