@@ -8,8 +8,12 @@ Program ini menyelesaikan **Travelling Salesman Problem (TSP)** menggunakan **Dy
 ├── src/
 │   └── tsp.rb
 ├── test/
-│   ├── input
-│   └── output
+│   ├── input/
+│   │   ├── input1.txt
+│   │   ├── input2.txt
+│   │   └── input3.txt
+│   └── output/
+│       └── output.png
 └── README.md
 ```
 
@@ -18,8 +22,8 @@ Program ini menyelesaikan **Travelling Salesman Problem (TSP)** menggunakan **Dy
 Input dibaca dari file teks dengan format berikut:
 
 1. Baris pertama adalah jumlah kota `n`.
-2. Diikuti oleh `n` baris berisi `n` angka yang mewakili matriks jarak antar kota.
-3. Gunakan `-1` untuk menunjukkan **tidak ada jalur langsung antar dua kota** dan `0` untuk diagonal utama.
+2. Diikuti oleh `n` baris berisi `n` angka yang mewakili matriks jarak antarkota.
+3. Gunakan `-1` untuk menunjukkan **tidak ada jalur langsung antara dua kota** dan `0` untuk diagonal utama.
 
 
 ## Cara Menjalankan
@@ -33,7 +37,7 @@ git clone https://github.com/JethroJNS/PR_STIMA_13523081_TSP.git
 2. Navigasi ke direktori repositori dan jalankan command berikut:
 
 ```bash
-ruby -d src/tsp.rb
+ruby ruby src/tsp.rb
 ```
 
 ## Pengembang
